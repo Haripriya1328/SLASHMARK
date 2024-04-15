@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed19ef9d48.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+  </head>
+
+
+  <body>
+
+<!-------------------------------------------------------------------------- NAVBAR START --------------------------------------------------------------------------->
+
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: black;">
+    <div class="container">
+      <a class="navbar-brand animate__animated animate__pulse animate__infinite	infinite" href="#">MY PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler">
+            <i class="bi bi-list"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cer">Archievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-------------------------------------------------------------------------- NAVBAR END --------------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------- HOME START --------------------------------------------------------------------------->
+
+
+<section class="hero-section" id="home">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6 col-12 col-lg-6 d-flex justify-content-center flex-column">
+        <h3 class="text-primary sub-title1 animate__backInLeft animate__animated">Hello</h3>
+        <h2 class="text-white fw-bold fs-1 my-3">I am <span style="color:rgb(240, 14, 214);" id="element"></span></h2>
+        <p class="text-white 1h-4" style="font-size:0.8rem !important";>I'm a web Developer with extensive experience<br>
+        for over 5 years. My expertise is to create and websites<br>
+      design,graphic design and many more....
+    </p>
+
+    <div class="d-flex my-3 gap-3">
+      <button class="btn-dark text-uppercase"><a href="#portfolio" style="text-decoration: none;">View work </a></button>
+    <button class="btn-dark text-uppercase"><a href="#contact" style="text-decoration: none;">Hire me</a></button>
+      
+    </div>
+    </div>
+      <div class="col-md-6 col-12 col-lg-6">
+        <img id="img1" src="images/newb66.jpg" alt="" class="img-fluid imgphone" style="display: flex;width: 200px; margin-top: 200px;margin-left: 250px;margin-bottom: 20%;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-------------------------------------------------------------------------- HOME END --------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------- ABOUT START --------------------------------------------------------------------------->
+
+<div id="about">
+  <div class="container">
+      <div class="row">
+          <div class="about-col-1">
+              <img id="img3" src="images/b2.jpg" data-aos="fade-right">
+          </div>
+          <div class="about-col-2">
+              <h1 class="sub-title text-primary" data-aos="zoom-in-down">About Me</h1>
+              <p>I'm a Passionate React Developer and ML Developer
+                  I am a student at JNTUA College Of Engineering PULIVENDULA. 
+                  To obtain a challenging position in a fast growing organisation to utilize and sharpen my skills, 
+                  seeking to leverage broad development experience and hands -on technical expertise in a challenging role as a Developer.
+                  Throughout my career, I have developed a strong foundation in Web technologies and programming skills.
+                   I am proficient in working with various software tools, and I have a proven track record of completing the course related 
+                   achievements or accomplishments relevant to my desired job of front end development. 
+                  </p>
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <li><span>Devops</span><br>Aspiring Devops Engineer</li>
+                          <li><span>Front End Development</span><br>Designing Web/App interfaces responsively</li>
+                          <li><span>Java Development</span><br>Designing java applications</li>
+                          <li><span>MySQL</span><br>Designing Databases</li>
+                          <li><span>Machine Learning</span><br>Developing ML Models</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                      <ul>
+                        <li><span>04/2023-09/2023</span><br>Web Designer intern at SmartBridge</li>
+                          <li><span>05/2023-07/2023</span><br>Front End Web Developer intern at IBM</li>
+                          <li><span>06/2023</span><br>Front End Developer Intern at CodeClause</li>
+                          <li><span>04/2023-06/2023</span><br>SalesForce Developer intern at SmartInternz</li>
+                          <li><span>05/2023-08/2023</span><br>Devops Intern at Hometute Technolgies Pvt lmt</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <ul>
+                          <li><span>2020-2024 Graduation</span><br>JNTUA College of Engineering, Pulivendula</li>
+                          <li><span>2018-2020 Intermediate</span><br>Sri Vidya Vikas Jr Collge, Kongareddypalli</li>
+                          <li><span>2018 Secondary Education</span><br>Camford English High School(West campus),Chittoor</li>
+                      </ul>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-------------------------------------------------------------------------- ABOUT END --------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------- SERVICES START --------------------------------------------------------------------------->
+
+
+<div id="services" class="text-white">
+  <div class="container">
+      <h1 class="sub-title text-primary" data-aos="fade-right" style="margin-top: 1em;">My Services</h1>
+      <div class="services-list">
+          <div data-aos="zoom-in">
+              <i class="fa-solid fa-code"></i>
+              <h2 class="text-center">Web Development</h2>
+              <p>I am well-versed in a variety of programming languages, including HTML, CSS, JavaScript,nodejs
+                  and have expertise in front-end development frameworks such as React and Angular.
+                  I am well-versed in a variety of programming languages, including HTML, CSS, JavaScript, and have expertise 
+                  in front-end development frameworks such as React and Angular.</p>
+                  <a href="#">Learn more</a>
+          </div>
+          <div data-aos="zoom-in">
+              <i class="fa-sharp fa-solid fa-crop"></i>
+              <h2 class="text-center">Database</h2>
+              <p>I have worked extensively with database platforms, such as Oracle, MySQL, and SQL Server.
+                   I am proficient in writing complex SQL queries, 
+                  designing and implementing database schemas, and ensuring data integrity and security.
+                   I have a deep understanding of database normalization principles and the ability to optimize queries and indexes for improved performance.</p>
+                  <a href="#">Learn more</a>
+          </div>
+          <div data-aos="zoom-in">
+            <i class="fa-solid fa-code"></i>
+            <h2 class="text-center">Devops</h2>
+            <p>Investigate and resolve technical issues, provide level 2 technical support, perform root cause analysis for production errors, 
+              build tools to improve customer experience and develop software to integrate with internal back-end systems.06-Feb-2023.
+              building and deploying applications, automating infrastructure, or implementing continuous integration and delivery.
+            </p>
+                <a href="#">Learn more</a>
+        </div>
+      </div>
+      
+  </div>
+</div>
+
+<!-------------------------------------------------------------------------- SERVICES END --------------------------------------------------------------------------->
+
+
+
+<!-------------------------------------------------------------------------- ARCHIEVEMENTS START --------------------------------------------------------------------------->
+
+<section id="cer" class="section-padding section-connector">
+  <div class="container text-white">
+      <div class="row">
+          <div class="col-12">
+              <div class="setion-title text-center" data-aos="fade-up" data-aos-delay="100" style="margin-top: 8em">
+                  <h1 class="sub-title  text-primary">My Certifications</h1>
+                  <p>I have acquired a diverse range of certifications throughout my professional journey, 
+                    each one contributing to my expertise and skill set. These certifications demonstrate my commitment to continuous learning and development.</p>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row gy-4 text-center">
+          <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service py-5 px-4 border">
+                  <div class="service-icon">
+                    <i class="ri-microsoft-fill"></i>
+                  </div>
+                  <h5 class="mt-4">Microsoft</h5>
+                  <p> I have earned Microsoft Certification, 
+                    which demonstrates my proficiency in Microsoft technologies and solutions.</p>
+                  <a href="https://www.credly.com/badges/d50c1151-de19-4fb8-a34c-30cae5ed1210/linked_in_profile" class="custom-link" style="text-decoration: none; color: violet;">
+                      <span>Read More</span>
+                      <i class="ri-arrow-right-line"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service py-5 px-4 border">
+                  <div class="service-icon">
+                    <i class="ri-pages-line"></i>
+                  </div>
+                  <h5 class="mt-4">IBM</h5>
+                  <p>With my IBM Certification, I am equipped to contribute to projects that require expertise in IBM technologies.</p>
+                  <a href="https://www.credly.com/badges/f6b7a79f-d14f-4588-ac68-e31a11432519/linked_in_profile" class="custom-link" style="text-decoration: none; color: violet;">
+                      <span>Read More</span>
+                      <i class="ri-arrow-right-line"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service py-5 px-4 border">
+                  <div class="service-icon">
+                    <i class="ri-amazon-fill"></i>
+                  </div>
+                  <h5 class="mt-4">AWS</h5>
+                  <p>I have demonstrated proficiency in key areas such as cloud architecture,
+                     infrastructure management and cost optimization. </p>
+                  <a href="https://www.credly.com/badges/ffed14a9-5297-4c4e-8505-dd545758197e/linked_in_profile" class="custom-link" style="text-decoration: none; color: violet;">
+                      <span>Read More</span>
+                      <i class="ri-arrow-right-line"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service py-5 px-4 border">
+                  <div class="service-icon">
+                    <i class="ri-code-s-slash-line"></i>
+                  </div>
+                  <h5 class="mt-4">DevTown</h5>
+                  <p>This certification validates my expertise in creating visually appealing and user-friendly interfaces for websites</p>
+                  <a href="https://www.linkedin.com/posts/t-hari-priya-a89221218_backend-mongodb-nodejs-activity-7074338706622480385-YBnK?utm_source=share&utm_medium=member_desktop" class="custom-link" style="text-decoration: none; color: violet;">
+                      <span>Read More</span>
+                      <i class="ri-arrow-right-line"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------- ARCHIVEMENTS END --------------------------------------------------------------------------->
+
+
+     
+<!-------------------------------------------------------------------------- PORTFOLIO START --------------------------------------------------------------------------->
+
+
+<div id="portfolio" class="py-5 bg-2 " style="margin-top: 7%;">
+
+  <!-- Container -->
+  <div class="container">
+
+      <!-- Row -->
+      <div class="row align-items-center mb-3" data-aos="fade-down" data-aos-delay="400">
+
+          <!-- Col -->
+          <div class="col-md-8  text-white" style="margin-top: 5em;">
+              <h6 class="text-primary sub-title">My Works</h6>
+              <h2 class="h3">Latest Projects</h2>
+              <p>Welcome to my journey! Collection of my projects that highlight my skills, expertise, and creative problem-solving abilities. 
+                Each project showcases my dedication to delivering high-quality results and my passion.
+               
+              </p>
+              
+          </div>
+
+          <!-- Col -->
+          <div class="col-md-4 text-md-end">
+              <a href="https://www.linkedin.com/in/t-hari-priya-a89221218/" class="btn btn-primary">Explore More</a>
+          </div>
+
+      </div>
+
+      <!-- Slider -->
+      <div class="swiper mySwiper pb-5">
+          <div class="swiper-wrapper">
+
+              <!-- Slide -->
+              <div class="swiper-slide" data-aos="fade-down" data-aos-delay="400">
+                   <div class="project p-4 border-custom">
+                      <img src="./assets/images/portfolio-01.jpg" class="img-fluid" alt="">
+                      <div class="overlay">
+                          <h4 class="h5" style="color: rgb(239, 228, 22); font-size:20px;font-weight:800;">Facebook Clone</h4>
+                          <p class="mb-0" style="color: white;font-weight: bold;">The Facebook Login Page Clone project is a web development project that aims to replicate the design and functionality of the Facebook login page using HTML, CSS, and JavaScript. 
+                            <a href="https://haripriya1328.github.io/FacebookLogin/">click here to view..</a></p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Slide -->
+              <div class="swiper-slide" data-aos="fade-down" data-aos-delay="400">
+                <div class="project p-4 border-custom">
+                   <img src="./assets/images/portfolio-02.jpg" class="img-fluid" alt="">
+                   <div class="overlay">
+                       <h4 class="h5" style="color: rgb(239, 228, 22);font-size:20px;font-weight:800;">Todo App</h4>
+                       <p class="mb-0" style="color: white;font-weight: bold;">The Todo App application that allows users to create and manage their daily tasks or to-do lists. It provides a user-friendly interface where users can add, edit, 
+                        and delete tasks as well.
+                         <a href="https://haripriya1328.github.io/Doorway-technologies/">click here to view..</a></p>
+                   </div>
+               </div>
+           </div>
+
+
+              <!-- Slide -->
+              <div class="swiper-slide" data-aos="fade-down" data-aos-delay="400">
+                <div class="project p-4 border-custom">
+                   <img src="./assets/images/portfolio-03.jpg" class="img-fluid" alt="">
+                   <div class="overlay">
+                       <h4 class="h5" style="color: rgb(239, 228, 22); font-size:20px;font-weight:800;">My ProfileProject</h4>
+                       <p class="mb-0" style="color: white;font-weight: bold;">The portfolio project is a personal website that showcases the work and skills of a web developer. The website is designed to be visually appealing and user-friendly, 
+                        utilizing modern web development technologies.
+                         <a href="https://647cc38faf2e9e4cbc6f1d0b--cosmic-zuccutto-fb9508.netlify.app/">click here to view..</a></p>
+                   </div>
+               </div>
+           </div>
+
+
+              <!-- Slide -->
+              <div class="swiper-slide" data-aos="fade-down" data-aos-delay="400">
+                <div class="project p-4 border-custom">
+                   <img src="./assets/images/portfolio-04.jpg" class="img-fluid" alt="">
+                   <div class="overlay">
+                       <h4 class="h5" style="color: rgb(239, 228, 22); font-size:20px;font-weight:800;">Open Book Api</h4>
+                       <p class="mb-0" style="color: white;font-weight: bold;">The Open Book API that utilizes the Open Book API to fetch and display information about books.
+                        The project aims to provide users with a user-friendly interface to explore various book-related information. 
+                         <a href="https://fylein-frontend-internship-assignment.vercel.app/">click here to view..</a></p>
+                   </div>
+               </div>
+           </div>
+
+      
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+
+  </div>
+
+</div>
+
+
+<!-------------------------------------------------------------------------- PORTFOLIO END --------------------------------------------------------------------------->
+
+
+
+<!-------------------------------------------------------------------------- CONTACT START --------------------------------------------------------------------------->
+
+
+    <div id="contact" style="margin-top: 8%;" data-aos="zoom-in-down">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title text-primary" style="margin-top: 8%;">Contact Me</h1>
+                  <p class="text-white"><i class="fa-solid fa-envelope"></i>haripriya2813@gmail.com</p>
+                  <p class="text-white"><i class="fa-solid fa-square-phone"></i>9014776083</p>
+                  <div class="social-icons">
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/hari-priya-a89221218"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://github.com/Haripriya1328"><i class="fa-brands fa-github"></i></a>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg" class="text-white"></span>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p class="text-white">Copyright © Made by HariPriya</p>
+      </div>
+  </div>
+<!-------------------------------------------------------------------------- CONTACT END --------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------- JS SCRIPT CODE --------------------------------------------------------------------------->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Developer', 'Designer'],
+    typeSpeed: 30,
+    backSpeed:30,
+    loop:true,
+  });
+</script>
+
+<!------------aboutex-------->
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  function openmenu(){
+      sidemenu.style.right="0";
+  }
+  function closemenu(){
+      sidemenu.style.right="-200px"
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz4HOG6SZfWd6_u1-Sqk-NsyB01BCApUuOhps27ypDwfW0qD-XsFf9W1RnoqtUfFwX1MA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML="Message sent successfully"
+          setTimeout(function(){
+              msg.innerHTML=""
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+
+  </body>
+</html>
